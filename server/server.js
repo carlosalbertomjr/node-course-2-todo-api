@@ -63,7 +63,7 @@ app.delete('/todos/:id', (req, res) => {
     if(!todo || todo === null) {
       res.status(404).send({});
     } else {
-      res.status(200).send(todo);
+      res.status(200).send({todo});
     }
   }, (e) => {
     res.status(200).send({});
